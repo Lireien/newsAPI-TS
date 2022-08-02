@@ -1,0 +1,70 @@
+body {
+    color: #fff;
+    background: #17181c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: sans-serif;
+    scrollbar-color: #70d6ff #69db7e;
+}
+::-webkit-scrollbar {
+    width: 12px; /* ширина для вертикального скролла */
+    height: 4px; /* высота для горизонтального скролла */
+    background-color: #184c88;
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+    background-color: #70d6ff;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #69db7e;
+}
+
+header {
+    padding: 10px 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.news {
+    height: fit-content;
+}
+footer {
+    height: 100px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .copyright {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+footer .copyright a {
+    color: #444;
+}
+footer .copyright a:hover {
+    color: #555;
+}
+footer .copyright:before {
+    content: '©';
+}
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-link:hover {
+    color: #555;
+}
+@media (max-width: 639px) {
+    footer {
+        flex-direction: column;
+    }
+}
